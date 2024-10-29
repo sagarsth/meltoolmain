@@ -1,0 +1,26 @@
+{
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "createUser.mjs"
+  ],
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "types": ["estree"],
+    "jsx": "react-jsx",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable","esnext.asynciterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "noEmit": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
+}
